@@ -11,7 +11,7 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         # 1. Handle API Route
-        if self.path == "/api/hello":
+        if self.path == "/":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
